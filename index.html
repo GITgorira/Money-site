@@ -3,59 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>金融アンケート調査</title>
+    <title>金融機関の取組みと評価</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
-        .header {
-            background-color: #0a3d62;
+        header {
+            background: #333;
             color: #fff;
-            padding: 15px 0;
+            padding: 10px 0;
             text-align: center;
         }
-        .container {
-            background-color: #fff;
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            margin: 20px auto;
         }
-        h1 {
-            text-align: center;
+        section {
             margin-bottom: 20px;
         }
-        p {
-            text-align: center;
-        }
-        .link-button {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: #007BFF;
+        footer {
+            background: #333;
             color: #fff;
             text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .link-button:hover {
-            background-color: #0056b3;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>金融アンケート調査</h1>
-    </div>
-    <div class="container">
-        <h1>金融アンケート調査へようこそ</h1>
-        <p>私たちの金融アンケートにご協力ください。以下のリンクをクリックしてアンケートページに移動します。</p>
-        <a href="https://gitgorira.github.io/Money-survey/" class="link-button">アンケートに答える</a>
-    </div>
+    <header>
+        <h1>金融機関の取組みと評価</h1>
+    </header>
+    <nav>
+        <a href="#section1">企業アンケート調査</a>
+        <a href="#section2">地域銀行の支援</a>
+        <a href="#section3">サステナビリティ情報</a>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>企業アンケート調査</h2>
+            <p>金融機関の取組みの評価等に関する企業アンケート調査の結果を公表しています。詳細は以下のリンクをご覧ください。</p>
+            <ul>
+                <li><a href="https://www.fsa.go.jp/common/about/research/20240628/20240628.html">アンケート調査結果</a></li>
+                <li><a href="https://www.fsa.go.jp/common/about/research/20240628/01.pdf">アンケート調査結果 (PDF)</a></li>
+            </ul>
+        </section>
+        <section id="section2">
+            <h2>地域銀行の支援</h2>
+            <p>地域銀行による顧客の課題解決支援の現状と課題についての詳細は以下のリンクをご覧ください。</p>
+            <ul>
+                <li><a href="https://www.fsa.go.jp/news/r5/ginkou/20240628-1/02.pdf">地域銀行の支援 (PDF)</a></li>
+            </ul>
+        </section>
+        <section id="section3">
+            <h2>サステナビリティ情報</h2>
+            <p>サステナビリティ情報の開示と保証のあり方に関するワーキング・グループの議事次第についての詳細は以下のリンクをご覧ください。</p>
+            <ul>
+                <li><a href="https://www.fsa.go.jp/singi/singi_kinyu/sustainability_disclose_wg/shiryou/20240628.html">サステナビリティ情報</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 金融機関評価サイト</p>
+    </footer>
 </body>
 </html>
