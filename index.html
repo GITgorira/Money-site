@@ -3,24 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お金の画像リンクページ</title>
+    <title>画像リンクページ</title>
     <style>
         body {
             text-align: center;
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            position: relative;
+            display: inline-block;
         }
         img {
-            width: 300px;
+            max-width: 100%;
             height: auto;
-            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .overlay a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>お金の画像リンクページ</h1>
-    <p>下の画像をクリックすると、<a href="https://gitgorira.github.io/Money-survey/" target="_blank">https://gitgorira.github.io/Money-survey/</a> に飛びます。</p>
-    <a href="https://gitgorira.github.io/Money-survey/" target="_blank">
-        <img src="https://images.app.goo.gl/nKshUKAKSExNzQo88" alt="お金の画像">
-    </a>
+    <h1>画像リンクページ</h1>
+    <div class="container">
+        <img src="https://images.app.goo.gl/nKshUKAKSExNzQo88" alt="表示される画像">
+        <div class="overlay">
+            <a href="https://gitgorira.github.io/Money-survey/" target="_blank">Money Survey</a>
+        </div>
+    </div>
 </body>
 </html>
+
