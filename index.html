@@ -28,24 +28,20 @@
             padding: 0;
             margin: 0;
         }
-        .redirect-button {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
+        .overlay-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
     <div class="embed-container">
         <iframe loading="lazy" src="https://www.canva.com/design/DAGg7v1vmMk/JpwngtHXmXFE-3KwFLjVhg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+        <a href="https://gitgorira.github.io/Money-survey/" target="_blank" class="overlay-link"></a>
     </div>
-    <a href="https://gitgorira.github.io/Money-survey/" target="_blank" class="redirect-button">Go to Survey</a>
 </body>
 </html>
