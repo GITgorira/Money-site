@@ -5,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embed Canva Design and Redirect</title>
     <style>
-        .embed-container {
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .full-page-container {
             position: relative;
             width: 100%;
-            height: 0;
-            padding-top: 141.4286%;
-            padding-bottom: 0;
-            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
-            margin-top: 1.6em;
-            margin-bottom: 0.9em;
+            height: 100%;
             overflow: hidden;
-            border-radius: 8px;
-            will-change: transform;
         }
-        .embed-container iframe {
+        .full-page-container iframe {
             position: absolute;
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
             border: none;
-            padding: 0;
-            margin: 0;
         }
         .overlay-link {
             position: absolute;
@@ -39,8 +37,8 @@
     </style>
 </head>
 <body>
-    <div class="embed-container">
-        <iframe loading="lazy" src="https://www.canva.com/design/DAGg7v1vmMk/wi4yHaIs7-4U-B2Dv4vY1Q/view" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+    <div class="full-page-container">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGg7v1vmMk/wi4yHaIs7-4U-B2Dv4vY1Q/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
         <a href="https://gitgorira.github.io/Money-survey/" target="_blank" class="overlay-link"></a>
     </div>
 </body>
