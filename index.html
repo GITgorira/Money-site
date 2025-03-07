@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,109 +7,66 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
     <header>
-        <h1>現在の日本や海外の株価や投資情報</h1>
+        <h1>投資情報ホームページ</h1>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#basic-info">基本的な投資の情報</a></li>
-            <li><a href="#stock-prices">株価の例</a></li>
-            <li><a href="#investment-risks">一人で投資を行う危険性</a></li>
-            <li><a href="#survey">おすすめの投資を見つけるために</a></li>
-            <li><a href="#current-stock-prices">現在の株価</a></li>
-        </ul>
-    </nav>
-
-    <section id="basic-info">
-        <h2>基本的な投資の情報</h2>
-        <p>投資は資産を増やすための重要な手段です。以下の情報を参考にしてください。</p>
-        <ul>
-            <li>投資の種類：株式、不動産、債券、投資信託など</li>
-            <li>リスクとリターン：高リスク高リターン、低リスク低リターン</li>
-            <li>分散投資の重要性：リスクを分散することで安全性を高める</li>
-        </ul>
-        <img src="images/investment_types.png" alt="投資の種類">
-    </section>
-
-    <section id="stock-prices">
-        <h2>株価の例</h2>
-        <canvas id="stockChart"></canvas>
-    </section>
-
-    <section id="investment-risks">
-        <h2>一人で投資を行う危険性</h2>
-        <p>一人で投資を行うことはリスクが伴います。以下の点に注意してください。</p>
-        <ul>
-            <li>情報不足による判断ミス</li>
-            <li>市場の変動に対応できない</li>
-            <li>感情的な取引による損失</li>
-        </ul>
-        <img src="images/investment_risks.png" alt="投資のリスク">
-    </section>
-
-    <section id="survey">
-        <h2>おすすめの投資を見つけるために</h2>
-        <p>以下のアンケート診断を受けて、あなたに最適な投資を見つけましょう。</p>
-        <a href="https://gitgorira.github.io/Money-survey/" target="_blank">投資のアンケート診断へ</a>
-    </section>
-
-    <section id="current-stock-prices">
-        <h2>現在の株価</h2>
-        <p>以下は現在の日本および海外の主要株価指数です。</p>
-        <ul>
-            <li>日経平均株価: <span id="nikkei"></span></li>
-            <li>NYダウ平均株価: <span id="dowjones"></span></li>
-            <li>S&P 500: <span id="sp500"></span></li>
-        </ul>
-    </section>
-
+    <main>
+        <section id="basic-info">
+            <h2>基本的な投資の情報</h2>
+            <p>投資とは、将来の利益を期待して資金を投入する行為です。以下に、主な投資の種類とそれぞれの特徴を説明します。</p>
+            <h3>株式投資</h3>
+            <p>企業の株式を購入することで、その企業の一部を所有することになります。メリットとしては、配当金や株価の上昇によるキャピタルゲインが期待できますが、株価の変動リスクが高く、投資元本を失う可能性があります。</p>
+            <h3>債券投資</h3>
+            <p>企業や政府が発行する債券を購入することで、一定期間後に元本と利息を受け取ることができます。安定した利息収入が期待できますが、利率が低く、インフレリスクがあります。</p>
+            <h3>不動産投資</h3>
+            <p>不動産物件を購入し、賃貸収入や売却益を得る投資方法です。安定した賃貸収入が期待でき、物件の価値が上昇する可能性がありますが、初期投資額が大きく、流動性が低いです。</p>
+            <h3>投資信託</h3>
+            <p>多くの投資家から集めた資金を、専門の運用会社が株式や債券に分散投資する方法です。分散投資によるリスク軽減が期待でき、専門家による運用が行われますが、運用手数料がかかり、元本保証がありません。</p>
+            <h3>暗号資産（仮想通貨）</h3>
+            <p>ビットコインやイーサリアムなどのデジタル通貨に投資する方法です。高いリターンが期待できることがありますが、価格変動が非常に激しく、規制リスクがあります。</p>
+            <img src="investment-types.png" alt="投資の種類">
+        </section>
+        <section id="investment-strategies">
+            <h2>投資戦略</h2>
+            <h3>長期投資</h3>
+            <p>数年から数十年の長期間にわたって資産を保有し、その間の成長を期待する投資方法です。短期的な市場の変動に影響されにくく、複利効果を享受できますが、長期間資金を拘束されるため、流動性が低くなります。</p>
+            <h3>短期投資</h3>
+            <p>数日から数ヶ月の短期間で利益を上げることを目的とした投資方法です。短期間での利益が期待できますが、市場の変動リスクが高く、頻繁な取引が必要です。</p>
+            <h3>分散投資</h3>
+            <p>複数の異なる資産に投資することで、リスクを分散する方法です。一部の投資が失敗しても、他の投資からの利益でカバーできますが、分散しすぎるとリターンが低くなる可能性があります。</p>
+        </section>
+        <section id="investment-risks">
+            <h2>一人で投資を行う危険性</h2>
+            <p>一人で投資を行うことは、情報不足や感情的な判断によるリスクがあります。以下に、主なリスクとその対策を説明します。</p>
+            <h3>情報不足</h3>
+            <p>適切な情報収集ができないと、誤った投資判断をしてしまう可能性があります。信頼できる情報源からデータを収集し、専門家の助言を受けることが重要です。</p>
+            <h3>感情的な判断</h3>
+            <p>市場の変動に対して感情的になり、冷静な判断ができなくなることがあります。投資プランを事前に立て、それに従うことが重要です。</p>
+            <img src="investment-risks.png" alt="投資のリスク">
+        </section>
+        <section id="current-stock-prices">
+            <h2>現在の株価</h2>
+            <h3>日本の株価</h3>
+            <canvas id="japan-stock-chart"></canvas>
+            <h3>アメリカの株価</h3>
+            <canvas id="usa-stock-chart"></canvas>
+            <h3>中国の株価</h3>
+            <canvas id="china-stock-chart"></canvas>
+            <h3>ドイツの株価</h3>
+            <canvas id="germany-stock-chart"></canvas>
+            <h3>イギリスの株価</h3>
+            <canvas id="uk-stock-chart"></canvas>
+        </section>
+        <section id="survey-link">
+            <h2>おすすめの投資を見つけるために</h2>
+            <p>自身に合った投資方法を見つけるために、以下のアンケート診断を活用してください。</p>
+            <p><a href="https://gitgorira.github.io/Money-survey/">投資のアンケート診断はこちら</a></p>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2025 投資情報ホームページ</p>
     </footer>
-
-    <script>
-        // 株価のデータを取得してグラフを描画するスクリプト
-        const ctx = document.getElementById('stockChart').getContext('2d');
-        const stockChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
-                datasets: [{
-                    label: '日本の株価',
-                    data: [20000, 21000, 22000, 23000, 24000, 25000, 26000, 27000, 28000, 29000, 30000, 31000],
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 2
-                }, {
-                    label: '海外の株価',
-                    data: [30000, 31000, 32000, 33000, 34000, 35000, 36000, 37000, 38000, 39000, 40000, 41000],
-                    borderColor: 'rgba(255, 99, 132, 1)',
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: false
-                    }
-                }
-            }
-        });
-
-        // 現在の株価をAPIから取得して表示するスクリプト
-        async function fetchStockPrices() {
-            const response = await fetch('https://api.example.com/stock-prices');
-            const data = await response.json();
-            document.getElementById('nikkei').innerText = data.nikkei;
-            document.getElementById('dowjones').innerText = data.dowjones;
-            document.getElementById('sp500').innerText = data.sp500;
-        }
-
-        fetchStockPrices();
-    </script>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
