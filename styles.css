@@ -13,6 +13,12 @@ header {
     text-align: center;
 }
 
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -30,6 +36,12 @@ nav ul li a {
 
 main {
     padding: 1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
 }
 
 section {
@@ -54,7 +66,7 @@ img {
     margin-bottom: 1em;
 }
 
-a {
+a.survey-button {
     display: inline-block;
     padding: 0.5em 1em;
     color: #fff;
@@ -62,15 +74,18 @@ a {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-align: center;
 }
 
-a:hover {
+a.survey-button:hover {
     background-color: #0056b3;
 }
 
 footer {
-    text-align: center;
-    padding: 1em 0;
     background-color: #003366;
     color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
 }
