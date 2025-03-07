@@ -1,64 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Survey Invitation</title>
+    <title>Canva Design</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
+            background-color: #f0f0f0;
         }
-        .container {
-            text-align: center;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+        .canva-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 0;
+            padding-top: 141.4286%;
+            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+            border-radius: 8px;
+            overflow: hidden;
+            will-change: transform;
         }
-        h1 {
-            color: #333333;
-        }
-        p {
-            color: #666666;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #007BFF;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-        .image-container {
-            margin-top: 20px;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .canva-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Our Money Survey!</h1>
-        <p>We value your opinion and would love to hear your thoughts on our latest survey about financial habits and preferences.</p>
-        <div class="image-container">
-            <img src="https://www.canva.com/design/DAGhABX2zGY/2keKVoOb3PZHsQI5jSqJqA/view?utm_content=DAGhABX2zGY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb7d72b2cb6" alt="Survey Invitation Image">
-        </div>
-        <a href="https://gitgorira.github.io/Money-survey/" class="cta-button">Take the Survey</a>
+    <div class="canva-container">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGg7v1vmMk/-LWLjI-nx5E48CKXTe_osQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
     </div>
+    <p><a href="https://www.canva.com/design/DAGg7v1vmMk/-LWLjI-nx5E48CKXTe_osQ/view?utm_content=DAGg7v1vmMk&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Canvaでデザインを見る</a></p>
 </body>
 </html>
