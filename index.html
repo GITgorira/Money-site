@@ -1,122 +1,116 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>投資のリスクについて考える</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-        }
-        .cta {
-            background: #77aaff;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .cta:hover {
-            background: #0056b3;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>投資情報ホームページ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>投資のリスクについて考える</h1>
-        </div>
+        <h1>現在の日本や海外の株価や投資情報</h1>
     </header>
-    <div class="container">
-        <div class="content">
-            <h2>投資の世界へようこそ</h2>
-            <p>投資は、将来のための資産形成手段として非常に魅力的です。しかし、その一方で多くのリスクも伴います。株式市場の変動、経済状況の変化、企業の業績など、様々な要因が投資の成否に影響を与えます。ここでは、投資に関するリスクと、それに対する対策について詳しく見ていきましょう。</p>
 
-            <h2>リスクの種類</h2>
-            <p>投資には主に以下のようなリスクがあります：</p>
-            <ul>
-                <li><strong>市場リスク：</strong>株式市場や債券市場の変動によるリスク。市場全体の動向により、投資資産の価値が大きく変動することがあります。</li>
-                <li><strong>信用リスク：</strong>投資先の企業や国が債務不履行に陥るリスク。例えば、企業が倒産した場合、その企業に投資した資金は返ってこない可能性があります。</li>
-                <li><strong>流動性リスク：</strong>投資資産を売却したいときにすぐに売れないリスク。特に不動産や一部の株式は、すぐに現金化できないことがあります。</li>
-                <li><strong>金利リスク：</strong>金利の変動による資産価値の変動リスク。金利が上昇すると、債券の価値が下がることがあります。</li>
-                <li><strong>インフレリスク：</strong>インフレによって資産の実質価値が減少するリスク。インフレが進むと、現金や固定利付債券の実質価値が目減りする可能性があります。</li>
-            </ul>
+    <nav>
+        <ul>
+            <li><a href="#basic-info">基本的な投資の情報</a></li>
+            <li><a href="#stock-prices">株価の例</a></li>
+            <li><a href="#investment-risks">一人で投資を行う危険性</a></li>
+            <li><a href="#survey">おすすめの投資を見つけるために</a></li>
+            <li><a href="#current-stock-prices">現在の株価</a></li>
+        </ul>
+    </nav>
 
-            <h2>投資の失敗例</h2>
-            <p>過去には、多くの投資家が失敗を経験しています。例えば、リーマンショック時には多くの投資家が大きな損失を被りました。また、企業の倒産や経済危機など、予測不可能な出来事も投資には影響を与えます。</p>
-            <p><strong>リーマンショックの例：</strong>2008年のリーマンショックは、世界的な金融危機を引き起こしました。この影響で、多くの企業が倒産し、株式市場は大幅に下落しました。多くの投資家が大きな損失を被り、金融機関も破綻する事態となりました。</p>
-            <p><strong>エンロンの倒産：</strong>2001年に起きたエンロンの倒産も、投資家に大きな影響を与えました。エンロンはアメリカの大手エネルギー企業でしたが、会計不正が発覚し、最終的に倒産しました。これにより、多くの投資家が資産を失い、エンロン株は無価値となりました。</p>
-            <p><strong>ギリシャの経済危機：</strong>2010年代初頭に発生したギリシャの経済危機も、多くの投資家に影響を与えました。ギリシャ政府の財政赤字が深刻化し、国債の価値が急落しました。これにより、ギリシャ国債に投資していた投資家は大きな損失を被りました。</p>
+    <section id="basic-info">
+        <h2>基本的な投資の情報</h2>
+        <p>投資は資産を増やすための重要な手段です。以下の情報を参考にしてください。</p>
+        <ul>
+            <li>投資の種類：株式、不動産、債券、投資信託など</li>
+            <li>リスクとリターン：高リスク高リターン、低リスク低リターン</li>
+            <li>分散投資の重要性：リスクを分散することで安全性を高める</li>
+        </ul>
+        <img src="images/investment_types.png" alt="投資の種類">
+    </section>
 
-            <h2>冷静な判断が求められる</h2>
-            <p>投資を成功させるためには、冷静な判断が求められます。市場の動向や経済のトレンドを常に把握し、自分自身のリスク許容度を理解することが重要です。また、信頼できる情報源からの情報を基に投資判断を行うことも大切です。</p>
-            <p>例えば、株式投資を行う際には、企業の財務状況や業績、業界の動向などを詳しく調査することが重要です。また、短期的な市場の変動に惑わされず、長期的な視点で投資を行うことが成功の鍵となります。</p>
+    <section id="stock-prices">
+        <h2>株価の例</h2>
+        <canvas id="stockChart"></canvas>
+    </section>
 
-            <h2>投資を始める前に</h2>
-            <p>投資を始める前に、十分な知識と情報を持つことが重要です。自身の財務状況や目標を明確にし、リスクを理解した上で投資を行いましょう。また、プロのアドバイスを受けることも一つの方法です。</p>
-            <p>例えば、ファイナンシャルプランナーに相談することで、自分に適した投資戦略を立てることができます。また、投資信託やETFなど、分散投資を行うことでリスクを軽減することも可能です。</p>
-            <p>さらに、投資には時間と労力が必要です。投資対象の情報収集や分析、ポートフォリオの管理など、継続的な努力が求められます。特に初心者は、まずは少額から始め、徐々に経験を積んでいくことが大切です。</p>
+    <section id="investment-risks">
+        <h2>一人で投資を行う危険性</h2>
+        <p>一人で投資を行うことはリスクが伴います。以下の点に注意してください。</p>
+        <ul>
+            <li>情報不足による判断ミス</li>
+            <li>市場の変動に対応できない</li>
+            <li>感情的な取引による損失</li>
+        </ul>
+        <img src="images/investment_risks.png" alt="投資のリスク">
+    </section>
 
-            <h2>リスク管理の重要性</h2>
-            <p>投資においては、リスク管理が非常に重要です。リスクを完全に排除することはできませんが、適切なリスク管理を行うことで、損失を最小限に抑えることができます。以下に、リスク管理のポイントをいくつか紹介します：</p>
-            <ul>
-                <li><strong>分散投資：</strong>複数の資産に分散して投資することで、特定の資産に依存しないポートフォリオを構築します。これにより、一部の資産が値下がりしても、全体の損失を抑えることができます。</li>
-                <li><strong>リスク許容度の把握：</strong>自分自身のリスク許容度を理解し、それに応じた投資戦略を立てることが重要です。リスク許容度は、年齢や収入、資産状況などによって異なります。</li>
-                <li><strong>定期的な見直し：</strong>投資ポートフォリオを定期的に見直し、必要に応じてリバランスを行うことで、リスクを適切に管理します。市場の変動やライフステージの変化に応じて、投資戦略を柔軟に調整することが大切です。</li>
-                <li><strong>情報収集と分析：</strong>投資対象の情報収集と分析を怠らないことが重要です。信頼できる情報源からの情報を基に、冷静な判断を行いましょう。</li>
-            </ul>
+    <section id="survey">
+        <h2>おすすめの投資を見つけるために</h2>
+        <p>以下のアンケート診断を受けて、あなたに最適な投資を見つけましょう。</p>
+        <a href="https://gitgorira.github.io/Money-survey/" target="_blank">投資のアンケート診断へ</a>
+    </section>
 
-            <h2>おすすめの投資が見つけられない方はこちら</h2>
-            <p>投資に対する不安や疑問を解消するために、以下のアンケートサイトをご利用ください。あなたに最適な投資方法を見つける手助けをします。</p>
-            <a class="cta" href="https://gitgorira.github.io/Money-survey/">アンケートサイトへ</a>
-        </div>
-    </div>
+    <section id="current-stock-prices">
+        <h2>現在の株価</h2>
+        <p>以下は現在の日本および海外の主要株価指数です。</p>
+        <ul>
+            <li>日経平均株価: <span id="nikkei"></span></li>
+            <li>NYダウ平均株価: <span id="dowjones"></span></li>
+            <li>S&P 500: <span id="sp500"></span></li>
+        </ul>
+    </section>
+
     <footer>
-        <p>&copy; 2025 投資リスク管理協会</p>
+        <p>&copy; 2025 投資情報ホームページ</p>
     </footer>
+
+    <script>
+        // 株価のデータを取得してグラフを描画するスクリプト
+        const ctx = document.getElementById('stockChart').getContext('2d');
+        const stockChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                datasets: [{
+                    label: '日本の株価',
+                    data: [20000, 21000, 22000, 23000, 24000, 25000, 26000, 27000, 28000, 29000, 30000, 31000],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2
+                }, {
+                    label: '海外の株価',
+                    data: [30000, 31000, 32000, 33000, 34000, 35000, 36000, 37000, 38000, 39000, 40000, 41000],
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                }
+            }
+        });
+
+        // 現在の株価をAPIから取得して表示するスクリプト
+        async function fetchStockPrices() {
+            const response = await fetch('https://api.example.com/stock-prices');
+            const data = await response.json();
+            document.getElementById('nikkei').innerText = data.nikkei;
+            document.getElementById('dowjones').innerText = data.dowjones;
+            document.getElementById('sp500').innerText = data.sp500;
+        }
+
+        fetchStockPrices();
+    </script>
 </body>
-</html>
+
 </html>
