@@ -79,8 +79,8 @@ a.survey-button {
     transition: background-color 0.3s ease;
     font-weight: bold;
     text-align: center;
-    padding: 14px 28px;
-    font-size: 14px;
+    padding: 18px 34px;
+    font-size: 20px;
 }
 
 a.survey-button:hover {
