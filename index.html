@@ -1,35 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // LIFF アプリを初期化
-            liff.init({ liffId: "2007149412-dyBMqqZ9" })
-                .then(() => {
-                    console.log('LIFF initialized');
-                    // イベントリスナーを設定
-                    document.getElementById('freezeMessage').addEventListener('click', function() {
-                        liff.sendMessages([{
-                            type: 'text',
-                            text: '担当者に連絡をする'
-                        }]).then(() => {
-                            alert('メッセージが送信されました');
-                            liff.closeWindow(); // ウィンドウを閉じる
-                        }).catch(err => {
-                            console.error('メッセージ送信エラー:', err);
-                        });
-                    });
-                })
-                .catch(err => {
-                    console.error('LIFF 初期化エラー:', err);
-                });
-        });
-        
-         function displayFreezeMessage() {
-            const message = document.getElementById('freezeMessage');
-            message.style.display = 'block';
-        }
-    </script>
 <head>
     <meta charset="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -40,7 +10,6 @@
 <body>
     <header>
         <div class="container">
-            <div id="freezeMessage">口座が凍結しました。これをタップして担当者にLINEでご連絡してください。</div>
             <h1>投資会社ウォーレン</h1>
             <nav>
                 <ul>
