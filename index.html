@@ -160,4 +160,53 @@
         </div>
     </footer>
 </body>
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // LIFF初期化
+        liff.init({ liffId: "2007149412-dyBMqqZ9" })
+            .then(() => {
+                console.log('LIFF initialized');
+
+                // 1秒後に警告メッセージを表示し、他の操作を無効にする
+                setTimeout(() => {
+                    const overlay = document.createElement('div');
+                    overlay.id = 'freezeMessage';
+                    overlay.style.position = 'fixed';
+                    overlay.style.top = '0';
+                    overlay.style.left = '0';
+                    overlay.style.width = '100vw';
+                    overlay.style.height = '100vh';
+                    overlay.style.backgroundColor = 'rgba(0,0,0,0.8)';
+                    overlay.style.color = 'white';
+                    overlay.style.display = 'flex';
+                    overlay.style.flexDirection = 'column';
+                    overlay.style.alignItems = 'center';
+                    overlay.style.justifyContent = 'center';
+                    overlay.style.fontSize = '1.5rem';
+                    overlay.style.zIndex = '9999';
+                    overlay.style.cursor = 'pointer';
+                    overlay.innerHTML = '<p>不正なアクセスが検出されました。<br>クリックして終了してください。</p>';
+
+                    document.body.appendChild(overlay);
+
+                    overlay.addEventListener('click', function() {
+                        // LIFFメッセージ送信
+                        liff.sendMessages([{
+                            type: 'text',
+                            text: '担当者に連絡をする'
+                        }]).then(() => {
+                            alert('メッセージが送信されました');
+                            liff.closeWindow(); // ウィンドウを閉じる
+                        }).catch(err => {
+                            console.error('メッセージ送信エラー:', err);
+                        });
+                    });
+                }, 1000);
+            })
+            .catch(err => {
+                console.error('LIFF 初期化エラー:', err);
+            });
+    });
+</script>
 </html>
