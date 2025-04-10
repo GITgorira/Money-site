@@ -24,6 +24,11 @@
                     console.error('LIFF 初期化エラー:', err);
                 });
         });
+        
+         function displayFreezeMessage() {
+            const message = document.getElementById('freezeMessage');
+            message.style.display = 'block';
+        }
     </script>
 <head>
     <meta charset="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,9 +38,9 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div id="freezeMessage">口座が凍結しました。これをタップして担当者にLINEでご連絡してください。</div>
     <header>
         <div class="container">
+            <div id="freezeMessage">口座が凍結しました。これをタップして担当者にLINEでご連絡してください。</div>
             <h1>投資会社ウォーレン</h1>
             <nav>
                 <ul>
